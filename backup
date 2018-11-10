@@ -1,0 +1,10 @@
+    $('.theme_panel .dark_style').on('click', 'a', function(){
+		var dark = $(this).attr('data-dark');
+
+        if(dark == 'dark') {
+            $('head').append('<link rel="stylesheet" href="css/template-dark/dark.css" />');
+        }
+        else {
+            $('link[href="css/template-dark/dark.css"]').remove();
+        }
+	});
